@@ -1,1 +1,1 @@
-print('Uz je to zase v poradku')
+print('Tohle je nova super funkce v testovaci vetvi!')
