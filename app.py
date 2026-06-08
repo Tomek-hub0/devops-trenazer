@@ -1,1 +1,1 @@
-print('Verze od Tomka')
+print('Verze od Alese')
