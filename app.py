@@ -1,1 +1,1 @@
-print('Tohle zamerne rozbijeme
+print('Uz je to zase v poradku')
