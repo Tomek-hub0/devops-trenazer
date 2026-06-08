@@ -1,0 +1,24 @@
+name: Moje Prvni DevOps Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Stahni kod z GitHubu
+      uses: actions/checkout@v4
+
+    - name: Nastav Python prostredi
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Spust nas Python skript (Test)
+      run: python app.py
+
+    - name: Otestuj Docker Build
+      run: docker build -t test-image .
